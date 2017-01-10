@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_alarm_controller"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.lab56.AlarmController"
+    android:layout_weight="4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/set_alarm"
+        android:layout_weight="1"
+        android:background="#FFCF06"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/set_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <TextView
+
+                android:paddingLeft="10dp"
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:text="Set Alarm     "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/your_profile"
+        android:layout_weight="1"
+        android:background="#FF8F08"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/your_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+
+                android:paddingLeft="10dp"
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:text="Your Profile  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView" />
+        </LinearLayout>
+
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/schedule_list"
+    android:background="#FF0000"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/schedule_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+
+            android:paddingLeft="10dp"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:text="Schedule List "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
+    <LinearLayout
+
+        android:id="@+id/alarm_a_friend"
+        android:background="#A82020"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/alarm_a_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+
+                android:paddingLeft="10dp"
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:text="Alarm a Friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

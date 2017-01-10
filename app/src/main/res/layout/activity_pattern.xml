@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pattern"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.user.lab56.PatternActivity">
+
+    <LinearLayout
+        android:id="@+id/set_alarm"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="#FF0000"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/day"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="10"
+            android:textSize="20sp"
+            android:textColor="#A82020" />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="05:30"
+                android:textColor="@android:color/white"
+                android:textSize="26sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:src="@drawable/frame"
+                android:id="@+id/imageView2" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/month"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="10"
+            android:textSize="20sp"
+            android:textColor="#A82020" />
+
+
+    </LinearLayout>
+
+    <com.eftimoff.patternview.PatternView
+        xmlns:patternview="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/patternView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        patternview:circleSize="25dp"
+        patternview:pathColor="#FFCF06"
+        patternview:circleColor="@android:color/white"
+        patternview:dotColor="@android:color/white"
+        patternview:gridRows="4"
+        patternview:gridColumns="4"/>
+
+</LinearLayout>
